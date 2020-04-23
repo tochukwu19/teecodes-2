@@ -1,16 +1,17 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
 import "./layout.css"
+import MouseTooltip from 'react-sticky-mouse-tooltip';
+
+
+const styles = {
+  width: "50px",
+  height: "50px",
+  borderRadius: "30px",
+  border: "1px solid #000"
+}
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,6 +35,13 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <MouseTooltip
+              visible={false}
+              offsetX={-17}
+              offsetY={-10}
+            >
+          <div style={styles} className="tooltip"></div>
+        </MouseTooltip>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
