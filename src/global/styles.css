@@ -111,7 +111,7 @@ header h3{
 
 /* Hero section */
 .hero{
-    height: 655px;
+    height: 75vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -160,17 +160,6 @@ header h3{
     color: var(--hl-col-dark);
 }
 
-.sunrise, .sunset{
-    height: 50px;
-}
-
-.sunrise{
-    transform: rotate(-180deg);
-}
-
-.sunset{
-    transform: rotate(0deg);
-}
 
 .modes{
     display: flex;
@@ -179,20 +168,61 @@ header h3{
     bottom: 20px;
     right: 20px;
 }
-#Capa_1{
-    fill: var(--hl-col);
-    width: auto;
-}
 
-.dark-mode #Capa_1{
-    fill: var(--hl-col);
-}
-
-#Capa_2{
-    fill: var(--hl-col-dark);
-    width: auto;
-}
-
-.dark-mode #Capa_2{
-    fill: var(--hl-col-dark);
-}
+/* Switch */
+.switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  

@@ -26,8 +26,6 @@ const Header = () => {
   })
 
 
-
-  console.log(clicked)
         return(
         <header>
           <div className="header-container">

@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import MouseTooltip from 'react-sticky-mouse-tooltip';
 
 
 const styles = {
@@ -29,13 +28,6 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <MouseTooltip
-              visible={false}
-              offsetX={-17}
-              offsetY={-10}
-            >
-          <div style={styles} className="tooltip"></div>
-        </MouseTooltip>
         {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
