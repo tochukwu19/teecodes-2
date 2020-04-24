@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -29,7 +30,7 @@ const IndexPage = () => {
       <div className="container">
           <label className="switch">
             <input type="checkbox" id="checkbox" onClick={toggle} />
-            <div className="slider round"></div>
+            <div className="slider round" />
           </label>
       </div>
       </div>

@@ -109,6 +109,22 @@ header h3{
     box-shadow: none !important;
 }
 
+@media only screen and (max-width: 600px){
+    .menu-text{
+        display: none;
+    }
+
+    .our-menu{
+        width: 0px;
+        flex-direction: column;
+        /* align-items: flex-end; */
+    }
+    .our-menu-container{
+        flex-direction: column-reverse;
+        top: 45px;
+    }
+}
+
 /* Hero section */
 .hero{
     height: 75vh;
@@ -116,8 +132,6 @@ header h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transition: all .5s ease-in-out;
-    background-image: linear-gradient(to bottom right,#ff8e65,#ffecac); */
 }
 
 .dark-mode .hero{
