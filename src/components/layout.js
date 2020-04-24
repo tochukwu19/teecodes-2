@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import "./layout.css"
 import MouseTooltip from 'react-sticky-mouse-tooltip';
 
 
@@ -10,7 +9,8 @@ const styles = {
   width: "50px",
   height: "50px",
   borderRadius: "30px",
-  border: "1px solid #000"
+  border: "2px solid #000",
+  pointerEvents: "none"
 }
 
 const Layout = ({ children }) => {
@@ -27,13 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
         <MouseTooltip
               visible={false}
@@ -42,11 +36,11 @@ const Layout = ({ children }) => {
             >
           <div style={styles} className="tooltip"></div>
         </MouseTooltip>
-        <footer>
+        {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </footer> */}
       </div>
     </>
   )

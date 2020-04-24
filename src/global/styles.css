@@ -6,10 +6,30 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.dark-mode{
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-text);
+}
+
+:root{
+    --dark-mode-bg: #1A1D24;
+    --dark-mode-text: #fff;
+    --hl-col: #61E786;
+}
+
 header{
     height: 80px;
     width: 100%;
     background-color: #fff;
+}
+
+.logo-span{
+    color: var(--hl-col);
+}
+
+.dark-mode header{
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-text);
 }
 
 .header-container{
@@ -17,7 +37,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    width: 90%;
+    width: 80%;
     margin: auto;
 }   
 
@@ -44,6 +64,10 @@ header h3{
     width: 30px;
     height: 3px;
     background-color: #000;
+}
+
+.dark-mode .handles{
+    background-color: var(--dark-mode-text);
 }
 
 .our-menu-container{
@@ -78,4 +102,84 @@ header h3{
     border: none;
     outline: 0;
     box-shadow: none !important;
+}
+
+/* Hero section */
+.hero{
+    height: 655px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: all .5s ease-in-out;
+    background-image: linear-gradient(to bottom right,#ff8e65,#ffecac); */
+}
+
+.dark-mode .hero{
+    background-color: var(--dark-mode-bg);
+    color: var(--dark-mode-text);
+}
+
+.hero-container{
+    width: 80%;
+}
+
+.hero-container h1{
+    font-size: 30px;
+    transform: scaleY(1) translateY(0);
+    opacity: 1;
+    transition: transform .5s ease-in-out,opacity .2s ease-in-out;
+    transition-delay: .8s;
+}
+
+.hero-container a{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--hl-col);
+}
+
+.hero-container em, .hero-container p{
+    margin: 0;
+}
+
+.hls{
+    color: var(--hl-col);
+}
+
+.sunrise, .sunset{
+    height: 50px;
+}
+
+.sunrise{
+    transform: rotate(-180deg);
+}
+
+.sunset{
+    transform: rotate(0deg);
+}
+
+.modes{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    bottom: 20px;
+    right: 20px;
+}
+#Capa_1{
+    fill: #000;
+    width: auto;
+}
+
+.dark-mode #Capa_1{
+    fill: var(--hl-col);
+}
+
+#Capa_2{
+    fill: var(--hl-col);
+    width: auto;
+}
+
+.dark-mode #Capa_2{
+    fill: var(--dark-mode-text);
 }

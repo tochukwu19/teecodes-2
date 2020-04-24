@@ -3,6 +3,7 @@ import { animated as a, useSpring } from "react-spring";
 
 
 
+
 const Header = () => {
   const [clicked, setClicked] = useState(false);
 
@@ -31,7 +32,7 @@ const Header = () => {
         <header>
           <div className="header-container">
               <div>
-                <h1>teecodes</h1>
+                <h1>tee<span className="logo-span">codes</span></h1>
               </div>
               <div className="our-menu-container">
                 <a.h3 style={Propsmenu} className="menu-text">MENU</a.h3>
