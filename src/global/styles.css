@@ -14,7 +14,8 @@ body{
 :root{
     --dark-mode-bg: #1A1D24;
     --dark-mode-text: #fff;
-    --hl-col: #61E786;
+    --hl-col: #0091AD;
+    --hl-col-dark: #FCFC62;
 }
 
 header{
@@ -25,6 +26,10 @@ header{
 
 .logo-span{
     color: var(--hl-col);
+}
+
+.dark-mode .logo-span{
+    color: var(--hl-col-dark);
 }
 
 .dark-mode header{
@@ -139,12 +144,20 @@ header h3{
     color: var(--hl-col);
 }
 
+.dark-mode .hero-container a{
+    color: var(--hl-col-dark);
+}
+
 .hero-container em, .hero-container p{
     margin: 0;
 }
 
 .hls{
     color: var(--hl-col);
+}
+
+.dark-mode .hls{
+    color: var(--hl-col-dark);
 }
 
 .sunrise, .sunset{
@@ -167,7 +180,7 @@ header h3{
     right: 20px;
 }
 #Capa_1{
-    fill: #000;
+    fill: var(--hl-col);
     width: auto;
 }
 
@@ -176,10 +189,10 @@ header h3{
 }
 
 #Capa_2{
-    fill: var(--hl-col);
+    fill: var(--hl-col-dark);
     width: auto;
 }
 
 .dark-mode #Capa_2{
-    fill: var(--dark-mode-text);
+    fill: var(--hl-col-dark);
 }
