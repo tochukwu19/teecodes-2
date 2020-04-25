@@ -12,7 +12,7 @@ const IndexPage = () => {
   };
 
 
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode(true);
 
   return (
     <Layout>
