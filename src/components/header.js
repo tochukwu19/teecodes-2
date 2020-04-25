@@ -6,6 +6,7 @@ import { animated as a, useSpring } from "react-spring";
 
 const Header = () => {
   const [clicked, setClicked] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false)
 
   const Propsone = useSpring({
     transform: clicked ? "rotate(45deg) translateX(10px)" : "rotate(0deg) translateX(0px)",
@@ -39,13 +40,24 @@ const Header = () => {
                   <li><h3>CONTACT</h3></li>
                   <li><h3>BLOG</h3></li>
                 </a.div>
-                <div role="button" tabIndex="0" className="menu-handle"  onKeyDown={()=> setClicked(!clicked)} onClick={()=> setClicked(!clicked)}>
+                <div role="button" tabIndex="0" className="menu-handle" onKeyDown={() => setClicked(!clicked)} onClick={() => {
+                  setClicked(!clicked);
+                }
+                }>
                   <a.div className="handles" style={Propsone}>
                   </a.div>
                   <a.div className="handles" style={Propstwo}>
                   </a.div>
                 </div>
               </div>
+              { clicked ? <div className="mobile-nav">
+                <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                  <li>Blog</li>
+                </ul>
+              </div> : null}
           </div>  
         </header>
       )
