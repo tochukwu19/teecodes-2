@@ -50,14 +50,14 @@ const Header = () => {
                   </a.div>
                 </div>
               </div>
-              { clicked ? <div className="mobile-nav">
+              <div className={ clicked ? "mobile-nav slide-in" : "mobile-nav"}>
                 <ul>
                   <li>Home</li>
                   <li>About</li>
                   <li>Contact</li>
                   <li>Blog</li>
                 </ul>
-              </div> : null}
+              </div>
           </div>  
         </header>
       )

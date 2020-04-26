@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   siteMetadata: {
     title: `teecodes`,
@@ -6,6 +7,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
     {
       resolve: "gatsby-plugin-use-dark-mode",
       options: {
@@ -41,3 +51,5 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+
