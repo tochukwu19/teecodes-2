@@ -6,6 +6,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .dark-mode {
     background-color: var(--dark-mode-bg);
     color: var(--dark-mode-text);
@@ -15,7 +19,7 @@ body {
     --dark-mode-bg: #1A1D24;
     --dark-mode-text: #fff;
     --hl-col: #0091AD;
-    --hl-col-dark: #FCFC62;
+    --hl-col-dark: #0091AD;
 }
 
 header {
@@ -55,7 +59,27 @@ header h3 {
     font-size: 19px;
 }
 
+.logo-c a {
+    color: #000;
+    text-decoration: none;
+}
 
+.dark-mode .logo-c a {
+    color: #fff;
+}
+
+.mobile-nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.mobile-nav h3 {
+    font-size: 25px;
+}
+
+.mobile-nav a:hover {
+    text-decoration: line-through;
+}
 
 .menu-handle {
     display: flex;
@@ -65,6 +89,7 @@ header h3 {
     height: 30px;
     margin-left: 10px;
     z-index: 5;
+    cursor: pointer;
 }
 
 .handles {
@@ -101,6 +126,19 @@ header h3 {
     right: 60px;
 }
 
+
+.our-menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.dark-mode .our-menu a {
+    color: #fff;
+}
+
+.our-menu a:hover {
+    text-decoration: line-through;
+}
 
 .menu-handle:focus {
     border: none;
@@ -151,8 +189,6 @@ ul {
 
 .mobile-nav li {
     list-style-type: none;
-    font-size: 40px;
-    font-weight: bold;
 }
 
 .mobile-nav li:hover {
@@ -306,7 +342,7 @@ input:checked+.slider:before {
 }
 
 .work {
-    background-color: #fff;
+    background-color: transparent;
     height: 250px;
     border-radius: 20px;
     display: flex;
@@ -314,14 +350,20 @@ input:checked+.slider:before {
     align-items: center;
 }
 
-.work p {
+.work4 h2{
     color: #000;
 }
 
-
-.work4 h2,
 .work5 h2 {
-    color: var(--dark-mode-bg);
+    color: #000;
+}
+
+.dark-mode .work4 h2{
+    color: #fff;
+}
+
+.dark-mode .work5 h2 {
+    color: #fff;
 }
 
 .work-image {
@@ -358,6 +400,19 @@ input:checked+.slider:before {
     border-radius: 20px;
 }
 
+.overlay p{
+    color: #000;
+}
+
+.dark-mode .overlay p{
+    color: #fff;
+}
+
+.dark-mode .overlay a{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
 .work1 .overlay,
 .work1:hover .work-image {
     opacity: 0;
@@ -368,7 +423,7 @@ input:checked+.slider:before {
 .work1:hover .overlay {
     opacity: 1;
     transition: ease-in-out 350ms;
-
+    z-index: 5;
 }
 
 .work2 .overlay,
@@ -381,6 +436,7 @@ input:checked+.slider:before {
 .work2:hover .overlay {
     opacity: 1;
     transition: ease-in-out 350ms;
+    z-index: 5;
 
 }
 
@@ -394,6 +450,7 @@ input:checked+.slider:before {
 .work3:hover .overlay {
     opacity: 1;
     transition: ease-in-out 350ms;
+    z-index: 5;
 
 }
 
@@ -407,6 +464,7 @@ input:checked+.slider:before {
 .work4:hover .overlay {
     opacity: 1;
     transition: ease-in-out 350ms;
+    z-index: 5;
 
 }
 
@@ -420,10 +478,11 @@ input:checked+.slider:before {
 .work5:hover .overlay {
     opacity: 1;
     transition: ease-in-out 350ms;
+    z-index: 5;
 
 }
 
-.work-header{
+.work-header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -434,40 +493,44 @@ input:checked+.slider:before {
     margin: auto;
 }
 
-.view-all{
+.view-all {
     font-size: 20px;
 }
 
-.works em{
+.works em {
     color: var(--hl-col);
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
 
-.work-header h2{
+.work-header h2 {
     margin: 0;
 }
 
 /* Redirect */
-.redir{
+.redir {
     height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.redir-about{
+.redir-about {
     width: 50%;
     border-right: 1px solid #000;
 }
 
-.redir-contact{
+.dark-mode .redir-about{
+    border-right: 1px solid #fff;
+}
+
+.redir-contact {
     width: 50%;
 }
 
 .redir-about,
-.redir-contact{
+.redir-contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,33 +540,39 @@ input:checked+.slider:before {
     text-align: center;
 }
 
-.redir a{
+.redir a {
     border: 1px solid #000;
     padding: 10px;
     text-decoration: none;
+    color: #000;
 }
 
-@media only screen and (max-width: 600px){
-    .redir{
+.dark-mode .redir a{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .redir {
         flex-direction: column;
         align-items: center;
         height: auto;
     }
 
-    .redir-about{
+    .redir-about {
         border-bottom: 1px solid #000;
         border-right: none;
         padding-bottom: 20px;
     }
 
     .redir-about,
-    .redir-contact{
+    .redir-contact {
         width: 80%;
     }
 }
 
 /* needs */
-.needs{
+.needs {
     height: 370px;
     width: 100%;
     display: flex;
@@ -512,28 +581,32 @@ input:checked+.slider:before {
     flex-direction: column;
 }
 
-.needs em{
+.needs em {
     letter-spacing: 1.3px;
     font-style: normal;
     text-transform: uppercase;
     color: var(--hl-col);
 }
 
-.needs h2{
+.needs h2 {
     font-size: 3em;
     margin: 0;
 }
 
-.needs h2:hover{
+.needs h2:hover {
     text-decoration: line-through;
 }
 
-.arrow{
+.dark-mode .needs h2{
+    color: #fff;
+}
+
+.arrow {
     height: 50px;
     margin-left: 5px;
 }
 
-.needs div{
+.needs div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -541,20 +614,26 @@ input:checked+.slider:before {
     transition: 200ms ease-in-out;
 }
 
-.needs div:hover{
+.needs div:hover {
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 600px){
-    .needs{
+
+.needs a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+    .needs {
         height: 200px;
     }
 
-    .needs h2{
+    .needs h2 {
         font-size: 2em;
     }
 
-    .needs div{
+    .needs div {
         width: auto;
     }
 
@@ -562,44 +641,51 @@ input:checked+.slider:before {
 
 
 /* footer */
-.footer{
+.footer {
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    border-top: 1px solid darkgrey;
 }
 
-.footnav{
+.footnav {
     height: 300px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 
-.footnav h2:hover{
+.footnav h2 {
     color: var(--hl-col);
 }
 
-.footnav li{
+.footnav li {
     list-style-type: none;
 }
 
-.footnav li:hover{
+.footnav li:hover {
     text-decoration: line-through;
 }
 
-.footnav a{
+.footnav a {
     text-decoration: none;
+    color: #000;
 }
 
-@media only screen and (max-width: 600px){
-    .footnav{
+.dark-mode .footnav a{
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .footnav {
         flex-direction: column;
         height: auto;
         align-items: flex-start;
         width: 80%;
-        margin: auto;
+        margin: 20px auto;
     }
 }

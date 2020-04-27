@@ -6,7 +6,10 @@ import useDarkMode from "use-dark-mode"
 import Work1 from "../images/work1.png"
 import Work2 from "../images/work2.png"
 import Work3 from "../images/logo.svg"
+import Work3D from "../images/logodark.svg"
 import right from "../images/right.svg"
+import rightD from "../images/rightdark.svg"
+import {Link} from "gatsby"
 
 
 
@@ -35,7 +38,7 @@ const IndexPage = () => {
             With years of experience and expertise bundled to serve you better.
           </em>
           <p>
-            <a href="/">View my projects</a> or <a href="/">Read my Blog</a>
+            <a href="#works">View my projects</a> or <Link to="/blog">Read my Blog</Link>
           </p>
         </div>
         <div className="modes">
@@ -47,7 +50,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section class="works">
+      <section class="works" id="works">
         <div className="work-header">
           <div>
             <em>SELECTED WORKS</em>
@@ -59,21 +62,21 @@ const IndexPage = () => {
             <img src={Work1} alt="work1" className="work-image"/>
             <div className="overlay">
                 <p>A Restaurant website made with Html, Css and Js</p>
-                <a href="\">Visit Website</a>
+                <a href="http://rivalrymeals.com/">Visit Website</a>
             </div>
           </div>
           <div className="work work2">
             <img src={Work2} alt="work2" className="work-image2"/>
             <div className="overlay">
                 <p>An Open source project</p>
-                <a href="\">Visit Website</a>
+                <a href="https://emmanuerl.github.io/ECX-landing-page/">Visit Website</a>
             </div>
           </div>
           <div className="work work3">
-            <img src={Work3} alt="work3" className="work-image3"/>
+            { !isDark ? <img src={Work3} alt="work3" className="work-image3"/> : <img src={Work3D} alt="work3" className="work-image3"/> }
             <div className="overlay">
                 <p>A Frontend-Mentor challenge i took on, A site built with React using Desktop first approach</p>
-                <a href="\">Visit Website</a>
+                <a href="https://insurefm.netlify.com/">Visit Website</a>
             </div>
           </div>
           <div className="work work4">
@@ -82,7 +85,7 @@ const IndexPage = () => {
             </div>
             <div className="overlay">
                 <p>A Videographer/Photographer portfolio website</p>
-                <a href="\">Visit Website</a>
+                <a href="http://austinjacob.netlify.com/">Visit Website</a>
             </div>
           </div>
           <div className="work work5">
@@ -91,7 +94,7 @@ const IndexPage = () => {
             </div>
             <div className="overlay">
                 <p>Let's make this happen</p>
-                <a href="\">Contact me!</a>
+                <Link to="/contact">Contact me!</Link>
             </div>
           </div>
         </div>
@@ -99,18 +102,18 @@ const IndexPage = () => {
       <section className="redir">
         <div className="redir-about">
            <h2>You want to know more about me?</h2>
-           <a>Visit about</a>
+           <Link to="/about">Visit about</Link>
         </div>
         <div className="redir-contact">
            <h2>I write a little about coding tips and hacks</h2>
-           <a>Read my blog</a>
+           <Link to="/blog">Read my blog</Link>
         </div>
       </section>
       <section className="needs">
         <em>Need a developer?</em>
         <div>
-            <h2>Let's work together</h2>
-            <img src={right} alt="arrow" className="arrow"/>
+            <Link to="/contact"><h2>Let's work together</h2></Link>
+            { !isDark ? <img src={right} alt="arrow" className="arrow"/> : <img src={rightD} alt="arrow" className="arrow"/>}
         </div>
       </section>
       <section className="footnav">
@@ -119,25 +122,25 @@ const IndexPage = () => {
           <p>Feel free to send me a message anytime</p>
           <ul>
             <li><span>Phone -</span> 08134420604</li>
-            <li><span>EMAIL -</span> Onwunali91@yahoo.com</li>
+            <li><a href="mailto:onwunali91@yahoo.com"><span>EMAIL -</span> Onwunali91@yahoo.com</a></li>
           </ul>
         </div>
         <div className="navcol">
           <h2>SiteMap</h2>
           <ul>
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Works</a></li>
-            <li><a>Blog</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><a href="#works">Works</a></li>
+            <li><Link to="/blog">Blog</Link></li>
           </ul>
         </div>
         <div className="navcol">
           <h2>Follow me on</h2>
           <ul>
-            <li><a>Twitter</a></li>
-            <li><a>Instagram</a></li>
-            <li><a>LinkedIn</a></li>
-            <li><a>Reddit</a></li>
+            <li><a href="https://twitter.com/teeCodes">Twitter</a></li>
+            <li><a href="https://www.instagram.com/tee.codes_/?hl=en">Instagram</a></li>
+            <li><a href="https://github.com/tochukwu19">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/onwunali-tochukwu-aa5318183">LinkedIn</a></li>
           </ul>
         </div>
       </section>
