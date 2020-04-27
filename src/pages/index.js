@@ -5,18 +5,20 @@ import SEO from "../components/seo"
 import useDarkMode from "use-dark-mode"
 import Work1 from "../images/work1.png"
 import Work2 from "../images/work2.png"
-import Work3 from "../images/work3.png"
+import Work3 from "../images/logo.svg"
+import right from "../images/right.svg"
+
 
 
 
 const IndexPage = () => {
-  const [isDark, setIsDark] = useState(true)
+  const [isDark, setIsDark] = useState(false)
   const toggle = () => {
     setIsDark(!isDark)
     !isDark ? darkMode.enable() : darkMode.disable()
   }
 
-  const darkMode = useDarkMode(true)
+  const darkMode = useDarkMode(false)
 
   return (
     <Layout>
@@ -46,6 +48,12 @@ const IndexPage = () => {
         </div>
       </section>
       <section class="works">
+        <div className="work-header">
+          <div>
+            <em>SELECTED WORKS</em>
+            <h2>Case Studies</h2>
+           </div>
+        </div>
         <div className="work-container">
           <div className = "work work1">
             <img src={Work1} alt="work1" className="work-image"/>
@@ -73,7 +81,7 @@ const IndexPage = () => {
               <h2>AUSTIN JACOBS</h2>
             </div>
             <div className="overlay">
-                <p>A Frontend-Mentor challenge i took on, A site built with React using Desktop first approach</p>
+                <p>A Videographer/Photographer portfolio website</p>
                 <a href="\">Visit Website</a>
             </div>
           </div>
@@ -86,6 +94,51 @@ const IndexPage = () => {
                 <a href="\">Contact me!</a>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="redir">
+        <div className="redir-about">
+           <h2>You want to know more about me?</h2>
+           <a>Visit about</a>
+        </div>
+        <div className="redir-contact">
+           <h2>I write a little about coding tips and hacks</h2>
+           <a>Read my blog</a>
+        </div>
+      </section>
+      <section className="needs">
+        <em>Need a developer?</em>
+        <div>
+            <h2>Let's work together</h2>
+            <img src={right} alt="arrow" className="arrow"/>
+        </div>
+      </section>
+      <section className="footnav">
+        <div className="navcol">
+          <h2>Contact Information</h2>
+          <p>Feel free to send me a message anytime</p>
+          <ul>
+            <li><span>Phone -</span> 08134420604</li>
+            <li><span>EMAIL -</span> Onwunali91@yahoo.com</li>
+          </ul>
+        </div>
+        <div className="navcol">
+          <h2>SiteMap</h2>
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Works</a></li>
+            <li><a>Blog</a></li>
+          </ul>
+        </div>
+        <div className="navcol">
+          <h2>Follow me on</h2>
+          <ul>
+            <li><a>Twitter</a></li>
+            <li><a>Instagram</a></li>
+            <li><a>LinkedIn</a></li>
+            <li><a>Reddit</a></li>
+          </ul>
         </div>
       </section>
     </Layout>
