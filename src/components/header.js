@@ -2,6 +2,9 @@
 import React, { useState } from "react"
 import { animated as a, useSpring } from "react-spring"
 import {Link} from "gatsby";
+import {Waypoint} from 'react-waypoint';
+
+
 
 const Header = () => {
   const [clicked, setClicked] = useState(false)
@@ -81,7 +84,11 @@ const Header = () => {
           </ul>
         </div>
       </div>
+      <Waypoint
+          onPositionChange={() => setClicked(false)}
+        />
     </header>
+    
   )
 }
 export default Header

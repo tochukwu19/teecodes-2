@@ -24,6 +24,7 @@
     "react-helmet": "^6.0.0",
     "react-spring": "^8.0.27",
     "react-sticky-mouse-tooltip": "0.0.1",
+    "react-waypoint": "^9.0.2",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {

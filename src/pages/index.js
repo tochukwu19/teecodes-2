@@ -48,7 +48,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section class="works" id="works">
+      <section className="works" id="works">
         <div className="work-header">
           <div>
             <em>SELECTED WORKS</em>
@@ -121,34 +121,6 @@ const IndexPage = () => {
                   </g>
                 </g>
               </svg>
-        </div>
-      </section>
-      <section className="footnav">
-        <div className="navcol">
-          <h2>Contact Information</h2>
-          <p>Feel free to send me a message anytime</p>
-          <ul>
-            <li><span>Phone -</span> 08134420604</li>
-            <li><a href="mailto:onwunali91@yahoo.com"><span>EMAIL -</span> Onwunali91@yahoo.com</a></li>
-          </ul>
-        </div>
-        <div className="navcol">
-          <h2>SiteMap</h2>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><a href="#works">Works</a></li>
-            <li><Link to="/blog">Blog</Link></li>
-          </ul>
-        </div>
-        <div className="navcol">
-          <h2>Follow me on</h2>
-          <ul>
-            <li><a href="https://twitter.com/teeCodes">Twitter</a></li>
-            <li><a href="https://www.instagram.com/tee.codes_/?hl=en">Instagram</a></li>
-            <li><a href="https://github.com/tochukwu19">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/onwunali-tochukwu-aa5318183">LinkedIn</a></li>
-          </ul>
         </div>
       </section>
     </Layout>
