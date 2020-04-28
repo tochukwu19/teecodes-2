@@ -59,6 +59,10 @@ header h3 {
     font-size: 19px;
 }
 
+.logo-c{
+    z-index: 5;
+}
+
 .logo-c a {
     color: #000;
     text-decoration: none;
