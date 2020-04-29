@@ -694,10 +694,10 @@ input:checked+.slider:before {
 }
 
 .footnav {
-    height: 300px;
+    height: 250px;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin-bottom: 10px;
 }
@@ -800,5 +800,115 @@ input:checked+.slider:before {
     .about{
         height: auto;
         margin: 20px 0;
+    }
+}
+
+
+/* Contact */
+.contact{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-container{
+    width: 70%;
+    margin: 50px auto;
+}
+
+.contact-container h3{
+    margin: 0;
+    color: #0091AD;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+form input{
+    margin: 0;
+    padding: 10px;
+    border: 1px solid var(--hl-col);
+    background-color: transparent;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.dark-mode form input{
+    color: #fff;
+}
+
+form input::placeholder{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode form input::placeholder{
+    color: #fff;
+}
+
+form textarea{
+    margin: 0;
+    padding: 10px;
+    height: 150px;
+    border: 1px solid var(--hl-col);
+    background-color: transparent;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.dark-mode form textarea{
+    color: #fff;
+}
+
+form textarea::placeholder{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode form textarea::placeholder{
+    color: #fff;
+}
+
+.submit{
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    border-radius: 9px;
+    background-color: var(--hl-col);
+    margin-top: 20px;
+    color: #000;
+}
+
+.submit:hover{
+    background-color: transparent;
+}
+
+.dark-mode .submit{
+    color: #fff;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+form div input{
+    width: 50%;
+}
+
+.name{
+    margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .contact-container{
+        width: 80%;
     }
 }

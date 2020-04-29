@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
             <li><Link to="/about">About</Link></li>
             <li><a href="#works">Works</a></li>
             <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
         <div className="navcol">
