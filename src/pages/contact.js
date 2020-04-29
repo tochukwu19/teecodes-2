@@ -10,7 +10,7 @@ const contactPage = () => (
         <div className="contact-container">
             <h3>I'll be happy to learn about your project</h3>
             <em>Fill the form below</em>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact" action="/success" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
                 <div>
                     <input type="text" name="name" placeholder="Your name" className="name"/>

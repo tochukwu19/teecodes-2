@@ -912,3 +912,39 @@ form div input{
         width: 80%;
     }
 }
+
+/* success */
+.success{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.success h3{
+    color: #0091AD;
+}
+
+.success a{
+    border-radius: 9px;
+    background-color: var(--hl-col);
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.success a:hover{
+    border: 1px solid var(--hl-col);
+    background-color: transparent;
+    color: #1A1D24;
+}
+
+.dark-mode .success a:hover{
+    color: #fff;
+}
+
+.dark-mode .success a{
+    color: #000;
+}
