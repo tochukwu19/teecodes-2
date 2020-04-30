@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><a href="#works">Works</a></li>
+            <li><a href="/#works">Works</a></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           <h2>Follow me on</h2>
           <ul>
             <li><a href="https://twitter.com/teeCodes">Twitter</a></li>
-            <li><a href="https://www.instagram.com/tee.codes_/?hl=en">Instagram</a></li>
+            <li><a href="https://www.instagram.com/tee.codes/">Instagram</a></li>
             <li><a href="https://github.com/tochukwu19">Github</a></li>
             <li><a href="https://www.linkedin.com/in/onwunali-tochukwu-aa5318183">LinkedIn</a></li>
           </ul>
