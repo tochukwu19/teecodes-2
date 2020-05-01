@@ -53,6 +53,7 @@ const Header = () => {
           <div
             role="button"
             tabIndex="0"
+            aria-label="button"
             className="menu-handle"
             onKeyDown={() => setClicked(!clicked)}
             onClick={() => {

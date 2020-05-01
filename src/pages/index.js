@@ -106,7 +106,7 @@ const IndexPage = () => {
         <em>Need a developer?</em>
         <div>
             <Link to="/contact"><h2>Let's work together</h2></Link>
-              <svg id="Layer_1" viewBox="0 0 512 512">
+              <svg id="Layer_2" viewBox="0 0 512 512">
                 <g>
                   <g>
                     <path d="M508.875,248.458l-160-160c-4.167-4.167-10.917-4.167-15.083,0c-4.167,4.167-4.167,10.917,0,15.083l141.792,141.792
