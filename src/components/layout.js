@@ -2,6 +2,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { Helmet } from "react-helmet"
 import Header from "./header"
 
 
@@ -18,6 +19,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+      </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
