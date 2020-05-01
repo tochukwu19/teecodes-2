@@ -22,14 +22,10 @@ const Header = () => {
       : "rotate(0deg) translateX(0px)",
   })
 
-  const Propsmenu = useSpring({
-    transform: !clicked ? "translateX(-7px)," : "translateX(0px)",
-    opacity: !clicked ? 1 : 0,
-  })
 
   const Propsmenulist = useSpring({
     transform: clicked ? "translateX(-17px)" : "translateX(0px)",
-    opacity: clicked ? 1 : 0,
+    display: clicked ? "flex" : "none",
   })
 
   return (
@@ -43,9 +39,6 @@ const Header = () => {
           </Link>
         </div>
         <div className="our-menu-container">
-          <a.h3 style={Propsmenu} className="menu-text">
-            MENU
-          </a.h3>
           <a.div className="our-menu" style={Propsmenulist}>
             <li>
               <Link to="/about"><h3>ABOUT</h3></Link>

@@ -269,19 +269,25 @@ ul {
     color: var(--hl-col-dark);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
     .hero-container h1 {
-        font-size: 27px;
+        font-size: 22px;
     }
+    .hero-container em {
+        font-size: 14px;
+    }
+    .hero-container a {
+        font-size: 16px;
+    }    
 }
 
 
 .modes {
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
 }
 
 .modes svg {
