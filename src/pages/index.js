@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import useDarkMode from "use-dark-mode"
@@ -8,6 +8,9 @@ import Work2 from "../images/work2.png"
 import Work3 from "../images/logo.svg"
 import Work3D from "../images/logodark.svg"
 import {Link} from "gatsby"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 
@@ -20,6 +23,15 @@ const IndexPage = () => {
   }
 
   const darkMode = useDarkMode(false)
+
+  useEffect(() => {
+
+    AOS.init({
+      duration : 2000
+    })
+
+  }
+)
 
   return (
     <Layout>
@@ -39,9 +51,9 @@ const IndexPage = () => {
             <a href="#works">View my projects</a> or <Link to="/blog">Read my Blog</Link>
           </p>
         </div>
-        <div className="modes">
+        {/* <div className="modes">
         <svg id="Layer_1" onClick={toggle} enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m384 384c0 70.692-57.308 128-128 128-141.384 0-256-114.616-256-256 0-140.28 112.837-254.187 252.696-255.958 79.292 18.328 131.304 313.266 131.304 383.958z" className="lig" fill="#fff"/></g><path d="m384 384c0-69.705-50.57-357.432-128-383.022v511.022c70.692 0 128-57.308 128-128z" fill="#e1f1fa"/><g><path d="m256 430.998c-25.915 0-46.998-21.083-46.998-46.998s21.083-46.998 46.998-46.998 46.998 21.083 46.998 46.998-21.083 46.998-46.998 46.998z" className="dar" fill="#23272b"/></g><path d="m302.998 384c0-25.914-21.083-46.998-46.998-46.998v93.995c25.915.001 46.998-21.083 46.998-46.997z" fill="#0b0c0d" className="dar"/><g><path d="m259.304 511.958c69.165-1.752 124.696-58.37 124.696-127.958 0-70.692-57.308-128-128-128s-128-57.308-128-128 57.308-128 128-128c141.384 0 256 114.616 256 256 0 140.28-112.837 254.187-252.696 255.958z" className="dar" fill="#23272b"/></g><path d="m384 384c0 69.588-55.531 126.206-124.696 127.958 139.859-1.771 252.696-115.679 252.696-255.958 0-141.384-114.616-256-256-256v256c70.692 0 128 57.308 128 128z" className="dar" fill="#0b0c0d"/><g><path d="m256 174.998c-25.915 0-46.998-21.083-46.998-46.998s21.083-46.998 46.998-46.998 46.998 21.083 46.998 46.998-21.083 46.998-46.998 46.998z" fill="#f5fafc"/></g><path d="m302.998 128c0-25.914-21.083-46.998-46.998-46.998v93.995c25.915.001 46.998-21.082 46.998-46.997z" className="lig" fill="#e1f1fa"/></g></svg>
-        </div>
+        </div> */}
       </section>
       <section className="works" id="works">
         <div className="work-header">
@@ -58,20 +70,6 @@ const IndexPage = () => {
                 <a href="http://rivalrymeals.com/">Visit Website</a>
             </div>
           </div>
-          <div className="work work2">
-            <img src={Work2} alt="work2" className="work-image2"/>
-            <div className="overlay">
-                <p>An Open source project</p>
-                <a href="https://emmanuerl.github.io/ECX-landing-page/">Visit Website</a>
-            </div>
-          </div>
-          <div className="work work3">
-            { !isDark ? <img src={Work3} alt="work3" className="work-image3"/> : <img src={Work3D} alt="work3" className="work-image3"/> }
-            <div className="overlay">
-                <p>A Frontend-Mentor challenge i took on, A site built with React using Desktop first approach</p>
-                <a href="https://insurefm.netlify.com/">Visit Website</a>
-            </div>
-          </div>
           <div className="work work4">
             <div className="work-image4">
               <h2>AUSTIN JACOBS</h2>
@@ -79,6 +77,20 @@ const IndexPage = () => {
             <div className="overlay">
                 <p>A Videographer/Photographer portfolio website</p>
                 <a href="http://austinjacob.netlify.com/">Visit Website</a>
+            </div>
+          </div>
+          <div className="work work3">
+            <img src={Work3D} alt="work3" className="work-image3"/>
+            <div className="overlay">
+                <p>A Frontend-Mentor challenge i took on, A site built with React using Desktop first approach</p>
+                <a href="https://insurefm.netlify.com/">Visit Website</a>
+            </div>
+          </div>
+          <div className="work work2">
+            <img src={Work2} alt="work2" className="work-image2"/>
+            <div className="overlay">
+                <p>An Open source project</p>
+                <a href="https://emmanuerl.github.io/ECX-landing-page/">Visit Website</a>
             </div>
           </div>
           <div className="work work5">

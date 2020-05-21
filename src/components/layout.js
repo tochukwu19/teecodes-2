@@ -1,9 +1,11 @@
 /* eslint-disable prettier/prettier */
-import React from "react"
+import React,{useEffect} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import Header from "./header"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Layout = ({ children }) => {

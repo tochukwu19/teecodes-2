@@ -208,7 +208,7 @@ ul {
     .our-menu {
         width: 0px;
         flex-direction: column;
-        display: none;
+        display: none !important;
     }
 
     .mobile-nav {
