@@ -67,7 +67,7 @@ const IndexPage = () => {
             <img src={Work1} alt="work1" className="work-image"/>
             <div className="overlay">
                 <p>A Restaurant website made with Html, Css and Js</p>
-                <a href="http://rivalrymeals.com/">Visit Website</a>
+                <a href="https://rivalrymealss.netlify.app/">Visit Website</a>
             </div>
           </div>
           <div className="work work4">
@@ -76,21 +76,16 @@ const IndexPage = () => {
             </div>
             <div className="overlay">
                 <p>A Videographer/Photographer portfolio website</p>
-                <a href="http://austinjacob.netlify.com/">Visit Website</a>
-            </div>
-          </div>
-          <div className="work work3">
-            <img src={Work3D} alt="work3" className="work-image3"/>
-            <div className="overlay">
-                <p>A Frontend-Mentor challenge i took on, A site built with React using Desktop first approach</p>
-                <a href="https://insurefm.netlify.com/">Visit Website</a>
+                <a href="https://austinjacobs.netlify.app/">Visit Website</a>
             </div>
           </div>
           <div className="work work2">
-            <img src={Work2} alt="work2" className="work-image2"/>
+            <div className="work-image4">
+              <h2>COURSKIT</h2>
+            </div>
             <div className="overlay">
-                <p>An Open source project</p>
-                <a href="https://emmanuerl.github.io/ECX-landing-page/">Visit Website</a>
+                <p>A Web app for easy Timetable Generation and Tracking.</p>
+                <a href="https://timetable-app.netlify.app/">Visit Website</a>
             </div>
           </div>
           <div className="work work5">
