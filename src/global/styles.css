@@ -367,13 +367,22 @@ ul {
 }
 
 .work-image4,
-.work-image5 {
+.work-image5,
+.work-image6 {
     position: absolute;
 }
 
 .overlay {
     text-align: center;
     width: 80%;
+}
+
+.logo1 {
+    color: #FF983B;
+}
+
+.logo2 {
+    color: #BE7867;
 }
 
 .overlay a {

@@ -79,13 +79,29 @@ const IndexPage = () => {
                 <a href="https://austinjacobs.netlify.app/">Visit Website</a>
             </div>
           </div>
-          <div className="work work2">
+          <div className="work work3">
+            <img src={Work3D} alt="work3" className="work-image3"/>
+            <div className="overlay">
+                <p>A Frontend-Mentor challenge i took on, A site built with React using Desktop first approach</p>
+                <a href="https://fm-insure.netlify.app/">Visit Website</a>
+            </div>
+          </div>
+          <div className="work work4">
             <div className="work-image4">
               <h2>COURSKIT</h2>
             </div>
             <div className="overlay">
                 <p>A Web app for easy Timetable Generation and Tracking.</p>
                 <a href="https://timetable-app.netlify.app/">Visit Website</a>
+            </div>
+          </div>
+          <div className="work work4">
+            <div className="work-image4">
+              <h2><p><span class="logo1">Sandwich</span><span class="logo2">Club</span></p></h2>
+            </div>
+            <div className="overlay">
+                <p>A Web app for easy Timetable Generation and Tracking.</p>
+                <a href="https://sandwichclub.netlify.app/">Visit Website</a>
             </div>
           </div>
           <div className="work work5">
