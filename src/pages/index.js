@@ -95,15 +95,6 @@ const IndexPage = () => {
                 <a href="https://timetable-app.netlify.app/">Visit Website</a>
             </div>
           </div>
-          <div className="work work4">
-            <div className="work-image4">
-              <h2><p><span class="logo1">Sandwich</span><span class="logo2">Club</span></p></h2>
-            </div>
-            <div className="overlay">
-                <p>A Web app for easy Timetable Generation and Tracking.</p>
-                <a href="https://sandwichclub.netlify.app/">Visit Website</a>
-            </div>
-          </div>
           <div className="work work5">
             <div className="work-image5">
               <h2>COMING SOON</h2>
