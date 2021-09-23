@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `teecodes`,
     description: `Frontend developer portfolio built with React and Gatsby`,
-    author: `@gatsbyjs`,
+    author: `Onwunali Tochukwu`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -48,8 +48,8 @@ module.exports = {
         start_url: `/`,
         background_color: `#0091AD`,
         theme_color: `#0091AD`,
-        display: `minimal-ui`,
-        icon: `src/images/text.png`, // This path is relative to the root of the site.
+        display: `minimal-ui`
+        // icon: `src/images/text.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
